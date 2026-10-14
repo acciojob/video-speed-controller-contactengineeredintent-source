@@ -49,6 +49,6 @@ rewind.addEventListener("click", replay);
 
 //play forward functionality
 function increaseSpeed() {
-  video.currentTime -= 10;
+  video.currentTime += 25;
 }
 playForward.addEventListener("click", increaseSpeed);
