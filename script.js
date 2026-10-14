@@ -5,11 +5,12 @@ let volumeInput = document.querySelector("#volumeInput");
 let speedSelector = document.querySelector("#playbackSpeed");
 let rewind = document.querySelector("#rewind");
 let playForward = document.querySelector("#forward");
+let progressValue = document.querySelector("#progressValue");
 
 //progress functinalitty
 function handleProgressUpdate() {
   const percentage = (video.currentTime / video.duration) * 100;
-  progressTab.value = percentage;
+  progressValue.textContent =`${Math.floor(percentage)}%`;
 }
 let progressClick = 0;
 video.addEventListener("timeupdate", handleProgressUpdate);
