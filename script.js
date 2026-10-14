@@ -13,7 +13,7 @@ function handleProgressUpdate() {
 }
 let progressClick = 0;
 video.addEventListener("timeupdate", handleProgressUpdate);
-progressTab.addEventListener("click", () => {});
+
 
 //play pause functionality
 playPauseBtn.addEventListener("click", (event) => {
