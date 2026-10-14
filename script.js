@@ -9,8 +9,8 @@ let progressValue = document.querySelector("#progressValue");
 
 //progress functinalitty
 function handleProgressUpdate() {
-  const percentage = (video.currentTime / video.duration) * 100;
-  progressTab.value = percentage;
+	const percentage = (video.currentTime / video.duration) * 100;
+	progressTab.value = percentage;
 	progressValue.textContent =`${percentage.toFixed(2)}%`;
 }
 let progressClick = 0;
